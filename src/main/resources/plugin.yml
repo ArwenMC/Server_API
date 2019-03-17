@@ -6,3 +6,6 @@ commands:
   animaltest:
     description: Your description
     usage: /animaltest
+  actionbartest:
+    description: Your description
+    usage: /actionbartest
