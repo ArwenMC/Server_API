@@ -1,5 +1,6 @@
 package io.github.arwen;
 
+import io.github.arwen.testcommands.ActionBarTest;
 import io.github.arwen.testcommands.EntityTest;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -21,7 +22,8 @@ public class Server_API extends JavaPlugin {
             return;
         }  */
 
-      //  this.getCommand("animaltest").setExecutor(new EntityTest());
+        this.getCommand("animaltest").setExecutor(new EntityTest());
+        this.getCommand("actionbartest").setExecutor(new ActionBarTest());
 
     }
 
