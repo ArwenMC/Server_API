@@ -16,12 +16,12 @@ public class EntityTest implements CommandExecutor {
         if (commandSender instanceof Player) {
             Player player = (Player) commandSender;
             Entity entity = new EntityBuilder(EntityType.POLAR_BEAR, player.getLocation())
-                    .setAge(EntityBuilder.EntityAge.ADULT)
-                    .setCustomName("PolarBear")
+                    .setAge(EntityBuilder.EntityAge.BABY)
+                    .setCustomName("Polar Bear")
                     .setCustomNameVisible(true)
                     .spawn();
 
-            player.sendMessage(ChatColor.GREEN + "PolarBear!");
+            player.sendMessage(ChatColor.GREEN + "Spawned PolarBear");
         }
             // If the player (or console) uses our command correct, we can return true
             return true;

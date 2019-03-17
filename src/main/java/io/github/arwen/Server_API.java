@@ -21,7 +21,7 @@ public class Server_API extends JavaPlugin {
             return;
         }  */
 
-        this.getCommand("animaltest").setExecutor(new EntityTest());
+      //  this.getCommand("animaltest").setExecutor(new EntityTest());
 
     }
 
