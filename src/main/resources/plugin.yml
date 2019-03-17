@@ -1,0 +1,8 @@
+name: Server_API
+main: io.github.arwen.Server_API
+version: 0.1.0
+author: Alexander Milanovich
+commands:
+  animaltest:
+    description: Your description
+    usage: /animaltest
