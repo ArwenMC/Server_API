@@ -37,10 +37,10 @@ public class EntityBuilder
     public EntityBuilder setAge(EntityAge age) { if ((en instanceof Ageable)) {
         switch (age) {
             case ADULT:
-                ((Ageable)en).setBaby();
+                ((Ageable)en).setAdult();
                 break;
             case BABY:
-                ((Ageable)en).setAdult();
+                ((Ageable)en).setBaby();
         }
     } else {
         throw new IllegalArgumentException("Entity's age cannot be modified!");
